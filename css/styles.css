@@ -1,0 +1,291 @@
+/*переменная для цвета и шрифта */
+:root {
+  --color-accent: #2196f3;
+  --color-main: #212121;
+  --color-white: #ffffff;
+  --second-color: #757575;
+  --for-section: #f5f4fa;
+  --color-footer: #2f303a;
+}
+/* обнуляем стили*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* Шрифт для всего тела */
+body {
+  font-family: "Roboto", "sans-serif";
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}
+
+/* cкрыли текст*/
+.Hide-text {
+  visibility: hidden;
+}
+
+/*скидывает точки со списков li*/
+.reset-point {
+  list-style: none;
+}
+
+/*забираю подчеркивание с сылок */
+.reset-decoration {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--color-accent);
+}
+
+.logo-color {
+  color: var(--color-main);
+}
+
+/* футер */
+.logo-color-second {
+  color: var(--color-white);
+}
+
+/* навигация */
+.list-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--color-main);
+}
+.list-link:hover,
+.list-link:focus {
+  color: var(--color-accent);
+}
+.mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
+  color: var(--second-color);
+}
+.mail:hover {
+  color: var(--color-accent);
+}
+.tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
+  color: var(--second-color);
+}
+.tel:hover {
+  color: var(--color-accent);
+}
+
+.first-section {
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+
+  background: var(--color-footer);
+}
+
+.text-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+}
+.button {
+  display: inline-block;
+  /* скинули дефолтные стили кнопки*/
+  border: none;
+
+  padding: 10px 32px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+
+  letter-spacing: 0.06em;
+
+  color: var(--color-white);
+  background-color: var(--color-accent);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--color-accent);
+  transition: 0.4s ease;
+}
+
+.btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-main);
+
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  border: none;
+}
+.btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+
+/* секция качества над которыми работает сайт */
+
+.first-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--color-main);
+}
+.second-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
+
+  color: var(--second-color);
+}
+
+/* карточки товара */
+.card {
+  cursor: pointer;
+}
+/* фотоотчет */
+
+.first-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-main);
+}
+/* фото команды */
+.second-heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-main);
+}
+.for-section {
+  background-color: var(--for-section);
+}
+/* подвал */
+.footer-style {
+  background: var(--color-footer);
+}
+
+/* навигация подвала */
+
+.footer-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-link:hover {
+  color: var(--color-white);
+}
+
+/*секция карточки товара */
+.name-progect {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--color-main);
+}
+
+.specification {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+
+  letter-spacing: 0.03em;
+
+  color: var(--second-color);
+}
