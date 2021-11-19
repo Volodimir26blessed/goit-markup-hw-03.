@@ -7,6 +7,16 @@
   --for-section: #f5f4fa;
   --color-footer: #2f303a;
 }
+
+/* Шрифт для всего тела */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}
+
 /* обнуляем стили*/
 p,
 h1,
@@ -23,24 +33,12 @@ ul {
   padding: 0;
 }
 
-button {
-  cursor: pointer;
-}
-
-.container {
+/* .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-
-/* Шрифт для всего тела */
-body {
-  font-family: "Roboto", "sans-serif";
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  color: var(--first-text-color);
-}
+} */
 
 /* cкрыли текст*/
 .Hide-text {
@@ -93,6 +91,38 @@ address {
 .list-link:focus {
   color: var(--color-accent);
 }
+
+/* позиционорование */
+
+/* .point-position {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.mail-tel {
+  margin-left: auto;
+}
+
+.logo {
+  margin-left: 215px;
+  margin-right: 93px;
+}
+.point-position {
+  padding-right: 215px;
+}
+.reset-decoration {
+  margin-right: 50px;
+} */
+/* конец позиционирования */
 .mail {
   font-style: normal;
   font-weight: 500;
@@ -165,6 +195,10 @@ address {
   transition: 0.4s ease;
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn {
   font-style: normal;
   font-weight: 500;
@@ -220,6 +254,7 @@ address {
 .card {
   cursor: pointer;
 }
+
 /* фотоотчет */
 
 .first-title {
@@ -227,7 +262,7 @@ address {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.1;
-  text-align: center;
+
   letter-spacing: 0.03em;
 
   color: var(--color-main);
@@ -238,7 +273,7 @@ address {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.1;
-  text-align: center;
+
   letter-spacing: 0.03em;
 
   color: var(--color-main);
@@ -246,6 +281,32 @@ address {
 .for-section {
   background-color: var(--for-section);
 }
+
+.developer-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--color-main);
+  cursor: pointer;
+}
+.work {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--second-color);
+  cursor: pointer;
+}
+
 /* подвал */
 .footer-style {
   background: var(--color-footer);
@@ -273,19 +334,23 @@ address {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
+  /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
 
   color: var(--color-main);
+  cursor: pointer;
 }
 
 .specification {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 30px;
+  /* identical to box height, or 187% */
 
   letter-spacing: 0.03em;
 
   color: var(--second-color);
+  cursor: pointer;
 }
