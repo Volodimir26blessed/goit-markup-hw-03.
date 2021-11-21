@@ -4,6 +4,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+  box-sizing: border-box;
 }
 
 /*переменная для цвета и шрифта */
@@ -17,7 +18,7 @@ body {
 }
 
 /* обнуляем стили*/
-p,
+
 h1,
 h2,
 h3,
@@ -27,17 +28,133 @@ h6 {
   margin: 0;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* .container {
-  width: 1200px;
+button {
+  cursor: pointer;
+}
+/* позиционорование */
+
+.container {
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-} */
+}
+.logo-offset {
+  margin-right: 93px;
+}
+
+.list-andr:not(:last-child) {
+  margin-right: 50px;
+}
+
+.reset-point {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  padding: 25px 0 94px 0;
+  display: flex;
+  align-items: center;
+}
+
+.mail-tel {
+  margin-left: auto;
+}
+
+.second-text {
+  padding-top: 10px;
+}
+
+.block {
+  display: inline-block;
+}
+.first-section-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adress-link {
+  display: flex;
+  flex-direction: column;
+}
+.first-section-item {
+  flex-basis: 270px;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.section-offset-bottom {
+  padding-bottom: 94px;
+}
+
+.list-wrap {
+  padding: 30px 60px;
+  text-align: center;
+}
+
+.work {
+  line-height: 1.2;
+}
+.activity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.img-five-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* порефолио */
+.section-list-buttons {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.lisr-buttons:not(last-child) {
+  margin-right: 8px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.establishment-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.establishment-cards-wrap {
+  padding: 20px 24px;
+}
+
+.container-cards {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.container-cards:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
 
 /* cкрыли текст*/
 .Hide-text {
@@ -91,36 +208,6 @@ address {
   color: var(--color-accent);
 }
 
-/* позиционорование */
-
-/* .point-position {
-  display: flex;
-}
-
-.list {
-  display: flex;
-  align-items: center;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-}
-
-.mail-tel {
-  margin-left: auto;
-}
-
-.logo {
-  margin-left: 215px;
-  margin-right: 93px;
-}
-.point-position {
-  padding-right: 215px;
-}
-.reset-decoration {
-  margin-right: 50px;
-} */
 /* конец позиционирования */
 .mail {
   font-style: normal;
@@ -148,15 +235,21 @@ address {
 }
 
 .first-section {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  justify-content: center;
+  align-items: center;
 
+  padding: 200px 0;
+  text-align: center;
   background: var(--color-footer);
 }
 
 .text-title {
+  max-width: 696px;
+  margin: 0 auto 30px;
+
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -170,8 +263,12 @@ address {
 }
 .button {
   display: inline-block;
-  /* скинули дефолтные стили кнопки*/
-  border: none;
+
+  background-color: var(--color-accent);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
 
   padding: 10px 32px;
   font-family: Roboto;
@@ -183,11 +280,6 @@ address {
   letter-spacing: 0.06em;
 
   color: var(--color-white);
-  background-color: var(--color-accent);
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
 }
 .button:hover {
   background-color: var(--color-accent);
@@ -209,18 +301,16 @@ button {
 
   color: var(--color-main);
 
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
-
   background: #f5f4fa;
   border-radius: 4px;
+  padding: 6px 22px;
 
-  cursor: pointer;
+  /* cursor: pointer; */
 
   border: none;
+  justify-content: space-around;
 }
+
 .btn:hover {
   color: var(--color-white);
   background-color: var(--color-accent);
@@ -257,7 +347,7 @@ button {
 
 /* фотоотчет */
 
-.first-title {
+.section-title {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -266,27 +356,23 @@ button {
   letter-spacing: 0.03em;
 
   color: var(--color-main);
-}
-/* фото команды */
-.second-heading {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.1;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
 
-  letter-spacing: 0.03em;
-
-  color: var(--color-main);
+  /* фото команды */
 }
 .for-section {
   background-color: var(--for-section);
 }
 
 .developer-name {
+  margin-bottom: 10px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.1;
   /* identical to box height */
 
   letter-spacing: 0.03em;
@@ -298,7 +384,7 @@ button {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.1;
   /* identical to box height */
 
   letter-spacing: 0.03em;
@@ -308,8 +394,14 @@ button {
 }
 
 /* подвал */
-.footer-style {
+.footer {
+  padding: 60px 0;
   background: var(--color-footer);
+}
+
+.footer-logo {
+  display: inline-flex;
+  margin-bottom: 20px;
 }
 
 /* навигация подвала */
@@ -328,13 +420,16 @@ button {
   color: var(--color-white);
 }
 
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 /*секция карточки товара */
 .name-progect {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
 
@@ -343,11 +438,11 @@ button {
 }
 
 .specification {
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 187% */
+  line-height: 1.8;
 
   letter-spacing: 0.03em;
 

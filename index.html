@@ -14,13 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap"
-        rel="stylesheet">
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-          integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+
+<link rel="stylesheet" href="./css/styles.css">
+
 </head>
 
 
@@ -29,33 +30,34 @@
     
 <header class="" >
     
-<div class="container" >
-  <!--это все навигация ведет к другим страницам или к формам регистрации (кнопки в nav не попадают) -->
+<div class="container">
+<!--это все навигация ведет к другим страницам или к формам регистрации (кнопки в nav не попадают) -->
 <nav class="nav" >
     
-<a class="logo reset-decoration  " href="http://127.0.0.1:5500/">Web<span class="logo-color ">Studio</span></a>
+<a class="logo logo-offset reset-decoration " href="http://127.0.0.1:5500/">Web<span class="logo-color ">Studio</span></a>
 
 
 <ul class="list reset-point">
-    <li class="list-item"><a class="list-link reset-decoration" href="./index.html">Студия</a></li>
+    <li class="list-item list-andr "><a class="list-link reset-decoration" href="./index.html">Студия</a></li>
     
-    <li class="list-item"><a class="list-link reset-decoration" href="./portfolio.html">Портфолио</a>
+    <li class="list-item list-andr "><a class="list-link reset-decoration" href="./portfolio.html">Портфолио</a>
     </li>
     
-    <li class="list-item"><a class="list-link reset-decoration" href="#">Контакты</a></li>
+    <li class="list-item list-andr "><a class="list-link reset-decoration" href="#">Контакты</a></li>
 </ul>
 
 <div class="mail-tel">
-<ul class="reset-point point-position ">
-   
-    <li class=""><a class="reset-decoration mail" href="mailto:info@example.">info@devstudio.com</a></li>
+<ul class="reset-point point-position "> 
 
-    <li class=""><a class="reset-decoration tel" href=":+380991111111">+38 099 111 11 11</a></li>
- 
+    <li class="navigation list-andr "><a class="reset-decoration mail" href="mailto:info@example.">info@devstudio.com</a></li>
+
+    <li class="navigation list-andr "><a class="reset-decoration tel" href=":+380991111111">+38 099 111 11 11</a></li>
+
 </ul>
 
 </nav>
 
+</div>
 
 </header>
 
@@ -71,116 +73,132 @@
 
 
 <!--секция качества над которыми работает сайт  -->
-<section class="second-section">
- <h2 class="Hide-text" >чем занимается команда</h2>
-    <ul class="reset-point" >
-        <li>
+<section class="section">
+    <div class="container" >
+ <h2 class="Hide-text"></h2>
+    <ul class="reset-point first-section-list" >
+        <li class="first-section-item">
              <h3 class="first-text" >Внимание к деталям</h3>
              <p class="second-text" >Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
        </li>
 
-        <li>
+        <li class="first-section-item">
              <h3 class="first-text" >Пунктуальность</h3>
              <p class="second-text" >Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
        </li>
 
-        <li>
+        <li class="first-section-item">
              <h3 class="first-text" >Планирование</h3>
              <p class="second-text" >Равным образом консультация с широким активом в значительной степени обуславливает.</p>
        </li>
 
-        <li>
+        <li class="first-section-item">
              <h3 class="first-text" >Современные технологии</h3>
              <p class="second-text" >Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
        </li>
     
     </ul>
+    </div>
 
 </section>
 
 <!--фотоотчет-->
-<section class="third-section" > 
+<section class="section" > 
 
-    <h2 class="first-title" >Чем мы занимаемся</h2>
+    <div class="container">
 
-    <ul class="reset-point" >
+        <h2 class="section-title" >Чем мы занимаемся</h2>
 
-        <li>
-            <img class="foto" src="./images/eff34a388bbc6409758a002e5a58c3ca.jpg" width="370" alt="человек печатает на клавеатуре">
-        </li>
+        <ul class="reset-point activity " >
 
-        <li>
-            <img class="foto" src="./images/fe209b7db875477ca0f844823574082d.jpg" width="370" alt="в руках техника Apple">
-        </li>
+            <li class="first-title-foto">
+                <img class="foto" src="./images/img-pc.jpg" width="370" alt="человек печатает на клавеатуре">
+            </li>
 
-        <li>
-            <img class="foto" src="./images/ff490664ba91f138b9f708e01d65306a.jpg" width="370" alt="в руках планшет с диаграмой цветов">
-        </li>
+            <li class="first-title-foto">
+                <img class="foto" src="./images/img-notebook.jpg" width="370" alt="в руках техника Apple">
+            </li>
 
-    </ul>
+            <li class="first-title-foto">
+                <img class="foto" src="./images/img-tablet.jpg" width="370" alt="в руках планшет с диаграмой цветов">
+            </li>
 
+        </ul>
+    </div>
 </section>
 
 
 
 
 <!--Фото команды--> 
-<section class="for-section" >
-<h2 class="second-heading">Наша команда</h2>
-<ul class="reset-point" >
-    <li>
-    <img class="" src="./images/img(3).jpg" width="270" alt="парень на фото"/>
-    <h3 class="developer-name">Игорь Демьяненко</h3>
-    <p class="work" lang="en">Product Designer</p>
+<section class="section for-section" >
+
+    <div class="container" >
+
+<h2 class="section-title five-list ">Наша команда</h2>
+<ul class="reset-point activity " >
+    <li class="team-item">
+        <img class="img-five-list" src="./images/img(3).jpg" width="270" alt="парень на фото"/>
+        <div class="list-wrap">
+            <h3 class="developer-name">Игорь Демьяненко</h3>
+            <p class="work" lang="en">Product Designer</p>
+        </div>
     </li>
 
-    <li>
-        <img class="" src="./images/img(2).jpg" width="270" alt="девушка на фото " />
-        <h3 class="developer-name" >Ольга Репина</h3>
-        <p class="work" lang="en">Frontend Developer</p>
+    <li class="team-item">
+        <img class="img-five-list" src="./images/img(2).jpg" width="270" alt="девушка на фото " />
+        <div class="list-wrap">
+            <h3 class="developer-name" >Ольга Репина</h3>
+            <p class="work" lang="en">Frontend Developer</p>
+        </div>
     </li>
 
 
-    <li>
-        <img class="" src="./images/img.jpg" width="270" alt="парень на фото" />
-        <h3 class="developer-name" >Николай Тарасов</h3>
-        <p class="work" lang="en">Marketing</p>
+    <li class="team-item">
+        <img class="img-five-list" src="./images/img (2).jpg" width="270" alt="парень на фото" />
+        <div class="list-wrap">
+            <h3 class="developer-name" >Николай Тарасов</h3>
+            <p class="work" lang="en">Marketing</p>
+        </div>
     </li>
 
-    <li>
-        <img class="" src="./images/img(1).jpg" width="270" alt="парень на фото" />
-        <h3 class="developer-name" >Михаил Ермаков</h3>
-        <p class="work" lang="en">UI Designer</p>
+    <li class="team-item">
+        <img class="img-five-list" src="./images/img(1).jpg" width="270" alt="парень на фото" />
+        <div class="list-wrap">
+            <h3 class="developer-name" >Михаил Ермаков</h3>
+            <p class="work" lang="en">UI Designer</p>
+        </div>
     </li>
 </ul>
+
+
+
 </section>
 
 <!--Подвал-->
-<footer class="footer-style">
+<footer class="footer">
 <!--Ссылка навигация -->
-<a class="logo reset-decoration" href="http://127.0.0.1:5500/">Web<span class="logo-color-second">Studio</span></a>
-
-
-<address>
-            <ul class="reset-point">
-                <li>
+    <div class="container">
+        <a class="footer-logo logo reset-decoration" href="http://127.0.0.1:5500/">Web<span class="logo-color-second">Studio</span></a>
+        <address>
+            <ul class="footer-list">
+                <li class="footer-item reset-point">
                     <a class="reset-decoration footer-link "
                         href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru">г.
                         Киев, пр-т Леси Украинки, 26</a>
             
-                <li class=""><a class="reset-decoration  footer-link" href="mailto:info@example.com">info@example.com</a></li>
-            
-                <li class=""><a class="reset-decoration  footer-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                <li class="footer-item reset-point"><a class="reset-decoration  footer-link" href="mailto:info@example.com">info@example.com</a></li>
+
+                <li class="footer-item reset-point"><a class="reset-decoration  footer-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
         </address>
+    </div>
 
 </footer>
 
 
 </body>
 </html>
-
-
 
 
 
