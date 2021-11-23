@@ -56,19 +56,41 @@ button {
   margin-right: 50px;
 }
 
-.reset-point {
-  display: flex;
+
+.reset-point{
   align-items: center;
+  display: flex;
 }
 
+.sectin-start{
+border-bottom: 1px solid #ECECEC;
+ margin: 0px;
+}
+
+.sectin-start-portfolio{
+ border-bottom: 1px solid #ECECEC;
+ margin: 0px 0px 94px 0px;
+}
 .nav {
-  padding: 25px 0 94px 0;
+  height: 80px;
+  padding: 32px 0;
   display: flex;
   align-items: center;
+  
 }
 
-.mail-tel {
+.header-container{
+  display: flex;
+  align-items: center;
   margin-left: auto;
+}
+.mail-tel{
+  margin-left: auto;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
 }
 
 .second-text {
@@ -81,6 +103,7 @@ button {
 .first-section-list {
   display: flex;
   justify-content: space-between;
+
 }
 
 .adress-link {
@@ -92,7 +115,7 @@ button {
 }
 
 .section {
-  padding: 94px 0;
+  padding:0px 0px 94px;
 }
 
 .section-offset-bottom {
@@ -157,12 +180,13 @@ button {
 }
 
 /* cкрыли текст*/
-.Hide-text {
+.hide-text {
   visibility: hidden;
 }
 
 /*скидывает точки со списков li*/
 .reset-point {
+ 
   list-style: none;
 }
 
@@ -235,7 +259,7 @@ address {
 }
 
 .first-section {
-  display: flex;
+ 
   flex-direction: column;
   min-height: 600px;
   justify-content: center;
@@ -244,6 +268,7 @@ address {
   padding: 200px 0;
   text-align: center;
   background: var(--color-footer);
+  margin: 0px 0px 94px 0px;
 }
 
 .text-title {
@@ -267,7 +292,6 @@ address {
   background-color: var(--color-accent);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   cursor: pointer;
 
   padding: 10px 32px;
@@ -422,6 +446,11 @@ button {
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-item{
+display:flex;
+align-items:center;
 }
 
 /*секция карточки товара */
