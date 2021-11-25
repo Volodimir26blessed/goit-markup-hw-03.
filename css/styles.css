@@ -69,7 +69,6 @@ border-bottom: 1px solid #ECECEC;
 
 .sectin-start-portfolio{
  border-bottom: 1px solid #ECECEC;
- margin: 0px 0px 94px 0px;
 }
 .nav {
   height: 80px;
@@ -115,11 +114,14 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .section {
-  padding:0px 0px 94px;
+  padding-top:94px;
+  
+
 }
 
 .section-offset-bottom {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .list-wrap {
@@ -136,6 +138,7 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .team-item {
+  background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -145,7 +148,7 @@ border-bottom: 1px solid #ECECEC;
   justify-content: space-between;
 }
 
-/* порефолио */
+/* портфолио */
 .section-list-buttons {
   margin-bottom: 50px;
   display: flex;
@@ -268,7 +271,7 @@ address {
   padding: 200px 0;
   text-align: center;
   background: var(--color-footer);
-  margin: 0px 0px 94px 0px;
+  margin: 0px;
 }
 
 .text-title {
@@ -287,34 +290,32 @@ address {
   color: var(--color-white);
 }
 .button {
-  display: inline-block;
+    display: inline-block;
 
-  background-color: var(--color-accent);
+    background-color: var(--color-accent);
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
 
-  padding: 10px 32px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.8;
+    padding: 10px 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8;
 
-  letter-spacing: 0.06em;
+    letter-spacing: 0.06em;
 
-  color: var(--color-white);
-}
-.button:hover {
-  background-color: var(--color-accent);
-  transition: 0.4s ease;
-}
+    color: var(--color-white);
+} */
+ 
 
 button {
   cursor: pointer;
-}
+} 
 
-.btn {
+.btn { 
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -383,10 +384,18 @@ button {
   margin: 0 auto;
   margin-bottom: 50px;
   text-align: center;
+}
 
   /* фото команды */
+
+.br-s{
+  margin-top: 94px;
 }
+
+  
+
 .for-section {
+  background-color: #eee;;
   background-color: var(--for-section);
 }
 
